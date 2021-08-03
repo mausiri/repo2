@@ -106,6 +106,12 @@ h1 {
 .hoverImg:hover {
   transform: scale(1.1); }
 
+.portada__img img {
+  opacity: 0.5;
+  transition: all 2s; }
+  .portada__img img:hover {
+    opacity: 1.0; }
+
 .seccion__flex {
   display: flex;
   flex-wrap: nowrap;

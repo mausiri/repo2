@@ -9,6 +9,12 @@
 
 .hoverImg:hover {transform: scale(1.1);}
 
+.portada__img img{
+	opacity: 0.5;
+	&:hover {opacity: 1.0;}
+	transition: all 2s;
+}
+
 .seccion__flex {
 	display:flex;
 	flex-wrap: nowrap;
