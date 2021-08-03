@@ -1,0 +1,36 @@
+$rojoViento: #cd5c5c;
+$nada: none;
+$linkActivo: 'a, a:active, a:hover, a:visited';
+$linkHover: 'a:active, a:hover';
+ 
+#{$linkActivo} {
+  color: $rojoViento;
+  text-decoration: none;
+}
+#{$linkHover} {
+  color: grey;
+}
+
+.header {
+	padding-top: 20px; 
+	padding-bottom: 20px;
+}
+
+.header__menu {
+	display: flex; 
+	flex-direction: row;
+	justify-content: space-around;
+	text-decoration: $nada;
+ 	li { 
+ 		list-style-type: $nada;
+ 	}
+ }
+
+.logo {
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+
+@media only screen and (min-width:0px) and (max-width:767px) {
+	.header { font-size: 0.6em}
+}

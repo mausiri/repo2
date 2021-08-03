@@ -1,0 +1,23 @@
+$nada: none;
+$chico: 70px;
+
+.footer__imgs {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 50px;
+}
+
+
+.footer li { 
+	list-style-type: $nada;
+		img {width: $chico;
+		opacity: 0.4;
+		&:hover{
+		opacity: 1.0;
+		transition: 1s;}
+		}		
+}
+
+
+
