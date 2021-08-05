@@ -89,9 +89,9 @@ h1 {
   list-style-type: none; }
   .footer li img {
     width: 70px;
-    opacity: 0.4; }
+    opacity: 1.0; }
     .footer li img:hover {
-      opacity: 1.0;
+      opacity: 0.4;
       transition: 1s; }
 
 /* ANIMACIONES DE LOGOS */
@@ -135,6 +135,10 @@ h1 {
 .form__contacto {
   display: flex;
   justify-content: center; }
+
+.img__form {
+  background-image: url("../assets/img/ojos2.png");
+  background-position: 45%; }
 
 /* VISTA MOBILE */
 @media only screen and (min-width: 0px) and (max-width: 767px) {
