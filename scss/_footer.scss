@@ -1,5 +1,6 @@
 $nada: none;
 $chico: 70px;
+$xchico: 40px;
 
 .footer__imgs {
 	display: flex;
@@ -19,5 +20,28 @@ $chico: 70px;
 		}		
 }
 
+.footer__txt {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
 
 
+@media only screen and (min-width:0px) and (max-width:767px) {
+	.footer li img {
+		width: $xchico;}
+
+	.footer__imgs {padding-top: 20px;}
+	
+	.footer__txt {font-size:10px;}
+
+}
+
+/* ---------- | VISTA TABLETS | ---------- */
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+	.footer li img {
+		width: $xchico;}
+
+	.footer__imgs {padding-top: 20px;}
+}

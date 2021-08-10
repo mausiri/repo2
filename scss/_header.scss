@@ -9,6 +9,7 @@ $linkHover: 'a:active, a:hover';
 }
 #{$linkHover} {
   color: grey;
+  transition: 1s;
 }
 
 .header {
@@ -19,7 +20,7 @@ $linkHover: 'a:active, a:hover';
 .header__menu {
 	display: flex; 
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	text-decoration: $nada;
  	li { 
  		list-style-type: $nada;
@@ -32,5 +33,7 @@ $linkHover: 'a:active, a:hover';
 }
 
 @media only screen and (min-width:0px) and (max-width:767px) {
-	.header { font-size: 0.6em}
+	.header { font-size: 0.5em}
+
+	.logo {padding-top: 0px;}
 }
