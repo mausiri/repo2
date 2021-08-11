@@ -19,7 +19,7 @@ a:active, a:hover {
     list-style-type: none; }
 
 .logo {
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 0px; }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -43,7 +43,7 @@ a:active, a:hover {
   padding-top: 30px; }
 
 .txt__parrafo--centrado {
-  font-size: 1.2em;
+  font-size: 1.3em;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px; }
@@ -132,10 +132,14 @@ h1 {
   .footer__imgs {
     padding-top: 20px; } }
 
-/* ANIMACIONES DE LOGOS */
+/* --------- ANIMACIONES DE LOGOS ---------*/
 .animate__animated:hover {
   animation-iteration-count: infinite;
   --animate-duration: 2s; }
+
+/* ---------- GRADIENT BACKGROUND ---------- */
+.background {
+  background-image: linear-gradient(#FFF, #eef2f3); }
 
 .hoverImg {
   transition: all 2s;
@@ -143,13 +147,6 @@ h1 {
 
 .hoverImg:hover {
   transform: scale(1.1); }
-
-/* -------- HOVER IMG DE PORTADA ---------- */
-.portada__img img {
-  opacity: 0.5;
-  transition: all 2s; }
-  .portada__img img:hover {
-    opacity: 1.0; }
 
 .seccion__flex {
   display: flex;

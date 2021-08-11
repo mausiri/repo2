@@ -1,23 +1,22 @@
 $height: 100%;
 $width: 100%;
 
-/* ANIMACIONES DE LOGOS */
+/* --------- ANIMACIONES DE LOGOS ---------*/
 .animate__animated:hover {
 	animation-iteration-count: infinite;
 	--animate-duration: 2s;
 }
 
+/* ---------- GRADIENT BACKGROUND ---------- */
+.background {
+	background-image: linear-gradient(#FFF, #eef2f3);
+}
+
+
 .hoverImg { transition: all 2s; width: 30%;}
 
 .hoverImg:hover {transform: scale(1.1);}
 
-
-/* -------- HOVER IMG DE PORTADA ---------- */
-.portada__img img{
-	opacity: 0.5;
-	&:hover {opacity: 1.0;}
-	transition: all 2s;
-}
 
 .seccion__flex {
 	display:flex;
