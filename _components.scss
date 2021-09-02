@@ -1,0 +1,206 @@
+$height: 100%;
+$width: 100%;
+
+/* --------- ANIMACIONES DE LOGOS ---------*/
+.animate__animated:hover {
+	animation-iteration-count: infinite;
+	--animate-duration: 2s;
+}
+
+/* ---------- BACKGROUND ---------- */
+.background {
+	background-image: url("../assets/img/fondo.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.hoverImg { transition: all 2s; width: 30%;}
+
+.hoverImg:hover {transform: scale(1.1);}
+
+
+/* ---------- PORTADA ---------- */
+.portada__img {
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	position: relative;
+}
+
+.seccion__flex {
+	display:flex;
+	flex-wrap: nowrap;
+	justify-items: center;
+	align-items: center;
+	margin-left: 5px;
+  	margin-right: 5px;
+}
+
+/* ---------- VIDEO HOME ---------- */
+.multimedia__component {
+	padding: 20px;
+	}
+
+
+/* ---------- CAROUSEL DE VIDEOS ---------- */
+.carousel__video {
+	padding: 30px;
+	}
+
+.media__parrafo {
+	background-color: white;
+}
+
+.btn {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* ---------- REPRODUCTORES DE SPOTIFY ---------- */
+
+.repSpoti {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	padding: 30px;
+}
+
+/* ---------- CAROUSEL CUMBIODROMO ---------- */
+.carousel { padding: 20px;}
+
+/* ---------- VIDEO CUMBIODROMO ---------- */
+.videoCumb {
+	iframe {
+		height: $height/1.5;
+		padding: 20px; }
+}
+
+.videoCumb--flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/* ---------- FORM DE CONTACTO ---------- */
+.form__contacto {
+	display: flex;
+	justify-content: center;
+}
+
+
+/* --------------- | VISTA MOBILE | --------------- */
+
+@media only screen and (min-width:0px) and (max-width:767px) {
+
+	.multimedia__component {
+		margin: 0px;
+		padding-top: 20px;
+		padding-bottom: 5px;
+	}
+
+	.img-fluid {
+		height: 100%;
+	}
+
+	.portada__img { 
+		padding:0px; }
+
+	/* ---------- IMG NOSOTROS ---------- */
+
+	.seccion__flex {
+		display:flex;
+		flex-direction: column;
+		align-items: center;}
+
+	.hoverImg { width:70%;}
+
+	/* ---------- CAROUSEL DE VIDEOS ---------- */
+
+	.carousel { padding: 20px;}
+
+	.carousel__video--size { height:$height/4; }
+
+
+	/* ---------- BOTON YOUTUBE ---------- */
+
+	.btn { 
+		width: 50%;
+		font-size: 0.8em;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	 }
+
+	/* ---------- REPRODUCTORES DE SPOTIFY ---------- */
+	.repSpoti {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 20px;
+	}
+
+	/* ---------- VIDEO CUMBIODROMO ---------- */
+
+	.videoCumb {
+		iframe {
+			height: $height/4;
+			padding: 20px;
+		}
+	}
+
+	/* ---------- FORM DE CONTACTO ---------- */
+	.form__contacto {
+		margin: 30px;
+	}
+}
+
+
+/* ---------- | VISTA TABLETS | ---------- */
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+
+	.multimedia__component {
+		margin: 0px;
+		padding-left: 40px;
+	}
+
+
+	/* ---------- CAROUSEL DE VIDEOS ---------- */
+
+	.carousel { padding: 20px;}
+
+	.carousel__video--size { height:$height/2.2; }
+
+	.btn { 
+		width: 40%;
+		font-size: 0.8em;
+		margin-top: 9px;
+		margin-bottom: 9px;
+	 }
+
+
+	/* ---------- REPRODUCTORES DE SPOTIFY ---------- */
+	.repSpoti {
+		display: flex;
+		flex-wrap: wrap;
+		iframe {
+			height: 250px;
+			padding-bottom: 20px;
+		}
+	}
+
+	/* ---------- VIDEO CUMBIODROMO ---------- */
+
+	.videoCumb {
+		iframe {
+			height: $height/2.2;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+
+
+
+
+
+
+}
