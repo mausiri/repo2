@@ -97,6 +97,7 @@ $width: 100%;
 		margin: 0px;
 		padding-top: 10px;
 		padding-bottom: 5px;
+		height:$height/4;
 		}
 
 	.img-fluid {
@@ -157,8 +158,7 @@ $width: 100%;
 /* ---------- | VISTA TABLETS | ---------- */
 
 @media only screen and (min-width:768px) and (max-width:1024px) {
-	
-	.portada__img img{ opacity: 1.0;}
+
 	.multimedia__component {
 		margin: 0px;
 		padding-left: 40px;
